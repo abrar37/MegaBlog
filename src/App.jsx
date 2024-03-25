@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react'
 import {useDispatch} from 'react-redux'
 import authService from './appwrite/auth'
@@ -24,11 +23,11 @@ function App() {
   }, [])
 
   return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-gray-500">
+    <div className="min-h-screen flex flex-wrap content-between">
       <div className="w-full block">
         <Header />
         <main>
-          TODO: <Outlet />
+          <Outlet />
         </main>
         <Footer />
       </div>
